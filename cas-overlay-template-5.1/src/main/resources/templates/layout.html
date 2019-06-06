@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">CAS &#8211; Central Authentication Service</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" th:href="@{${#themes.code('standard.custom.css.file')}}"/>
+    <link rel="shortcut icon" href="/cas/ztj/favicon.ico"/>
+</head>
+
+<body>
+<div id="container" class="container">
+    <div th:replace="fragments/logo"/>
+    <div layout:fragment="content" id="content">
+        <h1/>
+        <p/>
+    </div>
+    <div th:replace="fragments/footer"/>
+</div>
+<div th:insert="fragments/bottom"/>
+
+</body>
+</html>

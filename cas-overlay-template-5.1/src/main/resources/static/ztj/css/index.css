@@ -1,0 +1,247 @@
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+/*头部样式*/
+.header {
+    height: 70px;
+    background: #fff;
+    position: relative;
+}
+.header img {
+    position: absolute;
+    left: 50px;
+    top: 8px;
+    width: 58px;
+    height: 50px;
+}
+.header h1 {
+    width: 500px;
+    font: bold 26px/30px 'MicrosoftYaHeiUI-Bold';
+    position: absolute;
+    top: 20px;
+    left: 127px;
+}
+@media screen and (max-width:480px){
+    .header h1 {
+        width: 246px;
+        font: bold 16px/41px 'MicrosoftYaHeiUI-Bold';
+        left: 50%;
+        margin-left: -123px;
+    }
+    .header img {
+        display: none;
+    }
+}
+
+
+/*轮播图样式*/
+.main {
+    position: relative;
+}
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+.banner ul {
+    position: absolute;
+}
+.banner ul li {
+    float: left;
+}
+
+/*表单头样式*/
+.login-type {
+    width: 300px;
+    height: 374px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    margin-top: -180px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+@media screen and (max-width:480px){
+    .login-type {
+        right: 50%;
+        margin-right: -150px;
+    }
+}
+.login-type ul {
+    height: 22px;
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+.login-type li {
+    display: inline-block;
+    width: 66px;
+    font: 16px/22px 'MicrosoftYaHeiUI';
+    margin-right: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+.login-type li.current {
+    color: #2787F3;
+    border-bottom: 2px solid #2787F3;
+    height: 20px;
+}
+/*表单体样式*/
+.login-type .forms{
+    width: 600px;
+    position: absolute;
+    /*left: -300px;*/
+}
+#login_container {
+    display: inline-block;
+}
+.login-type .login-form {
+    width: 210px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    margin-top: 24px;
+}
+.login-form label {
+    display: block;
+    font: 14px/14px 'MicrosoftYaHeiUI';
+    margin-top: 20px;
+}
+.login-form .forgetPasswd {
+    font: 13px/13px 'MicrosoftYaHeiUI';
+    float: right;
+    margin-top: 4px;
+    margin-right: 2px;
+}
+.login-form .forgetPasswd:hover {
+    color: #2787F3;
+    text-decoration: underline;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.login-form input {
+    padding-left: 22px;
+    border: 1px solid #ccc;
+    width: 186px;
+    height: 30px;
+    border-radius: 4px;
+    margin-top: 6px;
+    font: 12px/30px 'Microsoft YaHei UI';
+}
+.userImg {
+    position: absolute;
+    top: 46px;
+    left: 2px;
+    width: 22px;
+    height: 20px;
+}
+.passwdImg {
+    position: absolute;
+    top: 120px;
+    left: 5px;
+    width: 17px;
+    height: 17px;
+}
+#submitBtn {
+    width: 100%;
+    border: none;
+    color: #fff;
+    font: 14px/24px 'Microsoft YaHei UI';
+    letter-spacing: 10px;
+    margin-top: 52px;
+    background-color: #2787F3;
+    cursor: pointer;
+}
+
+/*页脚样式*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #000;
+    filter:alpha(opacity=30);
+    background-color: rgba(0, 0, 0, .3);
+    text-align: center;
+}
+.footer span {
+    display: inline-block;
+    margin-left: 12px;
+    width: 60px;
+    height: 8px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background-color: #fff;
+    margin-top: 28px;
+    cursor: pointer;
+}
+.footer .active {
+    background-color: #7ed320;
+}
+
+/*登录失败*/
+.shadow {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter:alpha(opacity=30);
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.login-fail {
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    top: 50%;
+    margin-top: -85px;
+    background-color: #2174D1;
+}
+.shadow p {
+    color: #F4F6F1;
+    font: bold 20px/79px 'MicrosoftYaHeiUI-Bold';
+    margin-left: 80px;
+}
+.shadow p img {
+    position: absolute;
+    left: 54px;
+    top: 27px;
+}
+.shadow button {
+    width: 68px;
+    height: 36px;
+    border: 2px solid #FCF6F6;
+    background-color: #2174D1;
+    color: #FCF6F6;
+    font: 14px/30px 'MicrosoftYaHeiUI-Bold';
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.shadow button:hover {
+    background-color: #2174F1;
+}
+
+

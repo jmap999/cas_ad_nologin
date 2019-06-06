@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!--[if lt IE 8]>
+    <script type="text/javascript">
+        window.location.href = 'update-broswer.html';
+    </script>
+    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>物业公司统一登录平台</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="/cas/ztj/favicon.ico"/>
+    <style>
+        .wrap{
+            width: 100%;
+            height: 390px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -195px;
+            background-color: #fff;
+            border: solid 1px #777;
+            box-shadow: 0 0 8px #888;
+
+        }
+        .wrap .title{
+            text-align: center;
+            margin: 13px 25px;
+            font-weight: bold;
+            font-size: 19px;
+            color: #333;
+        }
+        .wrap .list{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .wrap .list .item{
+            text-align: center;
+            padding: 10px;
+            width: 25%;
+        }
+        .wrap .list .item:hover .link{
+            border: dashed 1px rgb(170, 170, 170);
+            padding-top: 109px;
+            padding-bottom: 3px;
+        }
+        .wrap .list .item .link{
+            padding-top: 110px;
+            padding-bottom: 4px;
+            background-position: center top;
+            background-repeat: no-repeat;
+            display: block;
+            text-decoration: none;
+        }
+        .wrap .list .item .bf{
+            background-image: url('imgs/ff.png');
+        }
+        .wrap .list .item .bo{
+            background-image: url('imgs/op.png');
+        }
+        .wrap .list .item .bc{
+            background-image: url('imgs/ch.png');
+        }
+        .wrap .list .item .bi{
+            background-image: url('imgs/ie.png');
+        }
+        .wrap .list .item .link .name{
+            color: #e25600;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 19px;
+            font-family: 'Open Sans',sans-serif;
+            font-weight: 300;
+        }
+        .wrap .list .item .link .vendor{
+            font-size: 10px;
+            color: #aaa;
+            text-align: center;
+            display: block;
+            margin-top: 5px;
+            text-decoration: none;
+        }
+        .wrap .tag {
+            text-align: center;
+            margin: 13px 25px;
+            font-size: 19px;
+            font-family: 'Open Sans',sans-serif;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+<!--页面log、标题开始-->
+<div class="header">
+    <img src="imgs/login-logo.png" width="62" height="55" alt="中国铁建" title="中国铁建">
+    <h1>中国铁建物业公司 | 用户统一登录</h1>
+</div>
+
+<!--轮播图开始-->
+<div id="main" class="main">
+    <div id="banner" class="banner">
+        <ul class="clearfix">
+            <li><img src="imgs/login-carousel-1.jpg" alt="login-carousel-1.jpg"></li>
+            <li><img src="imgs/login-carousel-2.jpg" alt="login-carousel-2.jpg"></li>
+            <li><img src="imgs/login-carousel-3.jpg" alt="login-carousel-3.jpg"></li>
+            <li><img src="imgs/login-carousel-4.jpg" alt="login-carousel-4.jpg"></li>
+            <li><img src="imgs/login-carousel-1.jpg" alt="login-carousel-1.jpg"></li>
+        </ul>
+    </div>
+</div>
+
+<!--图片序号-->
+<div id="footer" class="footer">
+    <span class="active"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!--更新浏览器遮罩层-->
+<div id="shadow" class="shadow">
+    <div class="wrap">
+        <p class="title">您的浏览器版本过低，请下载一款免费且优秀的最新版浏览器。</p>
+        <!-- 用table,为了兼容 ie5 -->
+        <table class="list">
+            <tr>
+                <td class="item">
+                    <a class="link bf" href="http://www.mydown.com/soft/170/473303670.shtml" target="_blank">
+                        <span class="name">Firefox</span>
+                        <span class="vendor">Mozilla Foundation</span>
+                    </a>
+                </td>
+                <td class="item">
+                    <a class="link bo" href="http://www.opera.com/zh-cn" target="_blank">
+                        <span class="name">Opera</span>
+                        <span class="vendor">Opera Software</span>
+                    </a>
+                </td>
+                <td class="item">
+                    <a class="link bc" href="https://pc.qq.com/detail/1/detail_2661.html" target="_blank">
+                        <span class="name">Chrome</span>
+                        <span class="vendor">Google</span>
+                    </a>
+                </td>
+                <td class="item">
+                    <a class="link bi" href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads" target="_blank">
+                        <span class="name">Internet Explorer Edge</span>
+                        <span class="vendor">Microsoft</span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <p class="tag">带来更多安全、极速和乐趣。</p>
+    </div>
+</div>
+
+
+<!--页面主体：轮播图、登录表单结束-->
+<script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^(https|imaps|http)://.*",
+  "name" : "ztj",
+  "id" : 10000003,
+  "description" : "中铁建自定义样式",
+  "evaluationOrder" : 10,
+  "theme" : "ztj"
+}
+
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^(https|imaps|http)://.*",
+  "name" : "ztj",
+  "id" : 10000003,
+  "description" : "中铁建",
+  "theme" : "ztj",
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
+    "allowedAttributes" : [ "java.util.ArrayList", [ "id", "attributes" ] ]
+  }
+}
+
